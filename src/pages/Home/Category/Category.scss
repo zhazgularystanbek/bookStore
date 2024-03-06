@@ -1,0 +1,110 @@
+#category {
+  h2 {
+    color: rgb(1, 0, 73);
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 39px;
+  }
+  .category {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    overflow-x: hidden;
+    margin-bottom: 45px;
+    &__block {
+      min-width: 315px;
+      height: 232px;
+      border-radius: 17px;
+      position: relative;
+    }
+    span {
+      color: rgb(255, 255, 255);
+      font-family: Inter;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0%;
+      text-align: left;
+      position: absolute;
+      bottom: 18px;
+      left: 22px;
+    }
+    .prev {
+      position: absolute;
+      z-index: 200;
+    }
+    .next {
+      position: absolute;
+      right: 0;
+    }
+  }
+  .category:hover {
+    overflow-x: scroll;
+  }
+  .all-books {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+  .books {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    .book-block {
+      width: 238px;
+      margin-bottom: 60px;
+      img {
+        width: 238px;
+        height: 284px;
+      }
+      .el-txt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        span {
+          color: rgb(0, 0, 0);
+          font-family: Roboto;
+          font-size: 24px;
+          font-weight: 800;
+          line-height: 117.69%;
+          letter-spacing: -2.5%;
+          text-align: left;
+        }
+        img {
+          width: 14px;
+          height: 14px;
+        }
+      }
+      p {
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 117.69%;
+        letter-spacing: -2.5%;
+        text-align: left;
+      }
+    }
+  }
+  button {
+    padding: 13px 62px;
+    color: rgb(1, 0, 73);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+    border: 1.5px solid rgb(1, 0, 73);
+    border-radius: 40px;
+    margin: 70px 0;
+    margin-left: 490px;
+  }
+}

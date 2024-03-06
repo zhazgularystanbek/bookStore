@@ -1,0 +1,105 @@
+#slider {
+  position: relative;
+  margin-bottom: 100px;
+  .sliderLists {
+    width: 100%;
+    height: 620px;
+  }
+  .sliderLists {
+    transition: 0.1s;
+  }
+  .slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .arrows {
+      margin-top: 206px;
+      display: flex;
+      justify-content: space-between;
+      .arrow-div {
+        width: 62px;
+        height: 62px;
+        border-radius: 100%;
+        box-shadow: -11px 4px 29px 0px rgba(148, 148, 148, 0.15),
+          0px 4px 4px 0px rgba(147, 147, 147, 0.15);
+        background: rgb(255, 255, 255);
+        opacity: 0.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        &:hover {
+          background: rgb(45, 44, 44);
+        }
+        &:hover span {
+          color: white;
+        }
+        span {
+          font-size: 40px;
+          color: rgb(1, 0, 73);
+          margin-top: -10px;
+        }
+      }
+    }
+  }
+  .rounds {
+    margin-top: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    .round {
+      background: transparent;
+      border: 2px solid rgb(180, 180, 180);
+      width: 12px;
+      height: 12px;
+    }
+    .active {
+      background: #f50505;
+      border: 2px solid rgb(220, 220, 220);
+      opacity: 1;
+      transition: 0.5s ease;
+    }
+  }
+  .modal {
+    position: absolute;
+    width: 897px;
+    height: 463px;
+    background: red;
+    top: 150px;
+    left: 310px;
+    .modal-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin-left: 850px;
+      }
+      input {
+        padding: 16px 52px;
+        color: rgb(0, 0, 0);
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 39px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-top: 65px;
+      }
+      button {
+        padding: 11px 112px;
+        border: 3px solid rgb(1, 0, 73);
+        border-radius: 5px;
+
+        background: rgb(1, 0, 73);
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 16.5%;
+        text-align: left;
+        margin-top: 90px;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+#categories {
+  .category {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    overflow-x: hidden;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    &__block {
+      min-width: 315px;
+      height: 67px;
+      border-radius: 17px;
+      position: relative;
+    }
+    span {
+      color: rgb(255, 255, 255);
+      font-family: Inter;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0%;
+      text-align: left;
+      position: absolute;
+      bottom: 18px;
+      left: 22px;
+    }
+  }
+  .category:hover {
+    overflow-x: scroll;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .breadCrumbs {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 40px;
+      span {
+        &:nth-child(1) {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 22px;
+          color: rgb(117, 117, 117);
+          text-align: left;
+        }
+        &:nth-child(2) {
+          color: rgb(0, 15, 53);
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 22px;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    .book-block {
+      width: 238px;
+      margin-bottom: 60px;
+      img {
+        width: 238px;
+        height: 284px;
+      }
+      .el-txt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        span {
+          color: rgb(0, 0, 0);
+          font-family: Roboto;
+          font-size: 24px;
+          font-weight: 800;
+          line-height: 117.69%;
+          letter-spacing: -2.5%;
+          text-align: left;
+        }
+        img {
+          width: 14px;
+          height: 14px;
+        }
+      }
+      p {
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 117.69%;
+        letter-spacing: -2.5%;
+        text-align: left;
+      }
+    }
+  }
+}
